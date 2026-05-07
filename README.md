@@ -64,11 +64,9 @@ dependencies:
 > Never forget to replace ^${latestVersion} with an actual version!<br />
 > (See the above version, or go to [versions](https://pub.dev/packages/fluwx/versions) on pub.dev)
 
-> [!NOTE]
-> `fluwx` without pay:<br/>
-> Developers who need to exclude payment for iOS can set `no_pay: true` in the `fluwx` section of `pubspec.yaml`.<br/>
-> See the example: [example/pubspec.yaml](./example/pubspec.yaml#L19)<br/>
 
+> [!WARNING]
+> For no_pay version, you switch to `fluwx_no_pay` package, which is a separate package without payment features.
 ## Configurations
 
 `Fluwx` enables multiple configurations in the section `fluwx` of `pubspec.yaml` from v4, you can reference [pubspec.yaml](./example/pubspec.yaml#L10)

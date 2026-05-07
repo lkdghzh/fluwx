@@ -60,10 +60,8 @@ dependencies:
 > 别忘记替换 ^${latestVersion} ！为 `fluwx` 的发布版本！<br />
 > （参考上面的版本号，或pub.dev 上的 [versions](https://pub-web.flutter-io.cn/packages/fluwx/versions)）
 
-> [!NOTE]
-> 不带支付的 `fluwx`:<br/>
-> 一些开发者并不需要在 iOS 端使用支付能力，此时您只需要在 pubspec.yaml 的 `fluwx` 部分设置 `no_pay: true` 来去除支付能力。<br/>
-> 参考文件：[example/pubspec.yaml](./example/pubspec.yaml#L19)<br/>
+> [!WARNING]
+> 对于不需要支付功能的版本，你可以切换到`fluwx_no_pay`包，这是一个独立的包，没有支付功能。
 
 ## 配置
 
