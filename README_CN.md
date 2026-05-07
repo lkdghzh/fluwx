@@ -74,18 +74,6 @@ dependencies:
 - debug_logging. 可选. 把它设置成`true`可以开启日志。
 - flutter_activity. 可选. 这个通常是用于Android的冷启动。如果不设置任何值，`Fluwx`将尝试启动launcher activity.
 
-- For iOS
-如果你在iOS上遇到了 `cannot load such file -- plist`, 请按照以下步骤进行操作：
-
-```shell
-# step.1 安装必要依赖
-sudo gem install plist
-# step.2 进行iOS文件夹(example/ios/,ios/)
-cd example/ios/
-# step.3 执行脚本
-pod install
-```
-
 - 在 OpenHarmony 上，要检查微信是否已安装，请在项目的 module.json5 中添加以下内容
 
 ```json5

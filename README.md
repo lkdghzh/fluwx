@@ -79,18 +79,6 @@ for more details.
 - debug_logging. Optional. Enable logs by setting it `true`.
 - flutter_activity. Optional. This is usually used by cold boot from WeChat on Android. `Fluwx` will try to launch launcher activity if not set.
 
-- For iOS
- If you are failing `cannot load such file -- plist` on iOS, please do the following steps:
-
-```shell
-# step.1 install missing dependencies
-sudo gem install plist
-# step.2 enter iOS folder(example/ios/,ios/)
-cd example/ios/
-# step.3 execute
-pod install
-```
-
 - On OpenHarmony, to check if WeChat is installed, add the following to the module.json5 in your project
 
 ```json5
