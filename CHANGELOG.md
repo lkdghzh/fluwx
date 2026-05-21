@@ -1,3 +1,6 @@
+# 6.0.0-preview.8
+* 迁移到KGP
+
 # 6.0.0-preview.7
 * Android迁移到KTS
 
