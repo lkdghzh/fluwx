@@ -19,7 +19,7 @@ runs:
       uses: subosito/flutter-action@v2
 
     - name: 🪪 Get Id Token
-      uses: actions/github-script@v6
+      uses: actions/github-script@v9
       with:
         script: |
           let pub_token = await core.getIDToken('https://pub.dev')
