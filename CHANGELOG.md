@@ -1,3 +1,6 @@
+# 6.0.0-preview.9
+* 修复 #762(No Pay)
+
 # 6.0.0-preview.8
 * 迁移到KGP
 
