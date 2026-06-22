@@ -66,17 +66,14 @@ dependencies:
 
 
 > [!WARNING]
-> For no_pay version, you switch to `fluwx_no_pay` package, which is a separate package without payment features.
+> For no_pay version, you will need switch to `fluwx_no_pay` package, which is a separate package without payment features.
 ## Configurations
 
 `Fluwx` enables multiple configurations in the section `fluwx` of `pubspec.yaml` from v4, you can reference [pubspec.yaml](./example/pubspec.yaml#L10)
 for more details.
 
-> For iOS, some configurations, such as url_scheme，universal_link, LSApplicationQueriesSchemes, can be configured by `fluwx`,
-> what you need to do is to fill configurations in `pubspec.yaml`
-
 - app_id. This is not used to init WeChat SDK so you still need to call `fluwx.registerApi` manually.
-- debug_logging. Optional. Enable logs by setting it `true`.
+- debug_logging. Optional. Enable logs by setting it `true`. It's not working on iOS for now.
 - flutter_activity. Optional. This is usually used by cold boot from WeChat on Android. `Fluwx` will try to launch launcher activity if not set.
 
 - On OpenHarmony, to check if WeChat is installed, add the following to the module.json5 in your project

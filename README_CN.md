@@ -67,11 +67,8 @@ dependencies:
 
 `Fluwx` 从v4开始可以在`pubspec.yaml`的`fluwx`进行一些配置。具体可以参考[pubspec.yaml](./example/pubspec.yaml#L10)。
 
-> V4开始，iOS中的url_scheme，universal_link, LSApplicationQueriesSchemes可以不必开发者手动配动。只需在`pubspec.yaml`
-> 中填写即可。
-
 - app_id。这并不会替你初始化微信SDK，所以你还是自己调用`fluwx.registerApi`。
-- debug_logging. 可选. 把它设置成`true`可以开启日志。
+- debug_logging. 可选. 把它设置成`true`可以开启日志。目前在iOS上没有效果。
 - flutter_activity. 可选. 这个通常是用于Android的冷启动。如果不设置任何值，`Fluwx`将尝试启动launcher activity.
 
 - 在 OpenHarmony 上，要检查微信是否已安装，请在项目的 module.json5 中添加以下内容
