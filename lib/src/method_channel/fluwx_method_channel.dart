@@ -70,7 +70,7 @@ class MethodChannelFluwx extends FluwxPlatform {
     return Future.value();
   }
 
-  _printLog(Map data) {
+  void _printLog(Map data) {
     debugPrint("FluwxLog: ${data["detail"]}");
   }
 
