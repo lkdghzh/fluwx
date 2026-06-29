@@ -185,16 +185,18 @@ class MethodChannelFluwx extends FluwxPlatform {
     switch (which) {
       case NormalAuth():
         return await methodChannel.invokeMethod(
-          'sendAuth',
-          which.arguments,
-        );
+              'sendAuth',
+              which.arguments,
+            ) ??
+            false;
       case QRCode():
         return await methodChannel.invokeMethod(
                 'authByQRCode', which.arguments) ??
             false;
       case PhoneLogin():
         return await methodChannel.invokeMethod(
-            'authByPhoneLogin', which.arguments);
+                'authByPhoneLogin', which.arguments) ??
+            false;
     }
   }
 
@@ -203,10 +205,12 @@ class MethodChannelFluwx extends FluwxPlatform {
     switch (which) {
       case Payment():
         return await methodChannel.invokeMethod(
-            'payWithFluwx', which.arguments);
+                'payWithFluwx', which.arguments) ??
+            false;
       case HongKongWallet():
         return await methodChannel.invokeMethod(
-            'payWithHongKongWallet', which.arguments);
+                'payWithHongKongWallet', which.arguments) ??
+            false;
     }
   }
 
