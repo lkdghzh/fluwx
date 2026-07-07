@@ -1,5 +1,12 @@
+# 6.0.0
+* iOS支持UISceneDelegate
+* iOS迁移到Swift Package Manager，iOS端自动化配置不再生效，需要自己生成
+* fluwx_no_pay又回来了
+* Android迁移到KTS
+* Android迁移到KGP
+
 # 6.0.0-preview.10
-* 鸿蒙端加来
+* 鸿蒙端加回来
 
 # 6.0.0-preview.9
 * 修复 #762(No Pay)
